@@ -1,13 +1,21 @@
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
-import { VidioContext } from "./context";
-
+import Body from "./components/body";
+import Navbar from "./components/navbar";
+import Sidebar from "./components/sidebar";
+import { ShortsContext, VidioContext } from "./context";
+import FirstMassiv from "./utilities/backend1";
 function App() {
+  // const [Vidio, SetVidio] = useState(FirstMassiv);
   return (
-    <VidioContext.Provider>
-      <div className="App">
-        <h1>hello</h1>
-      </div>
+    <VidioContext.Provider value={FirstMassiv}>
+      <ShortsContext.Provider>
+        <Navbar />
+        <div style={{ display: "flex" }}>
+          <Sidebar />
+          <Body />
+        </div>
+      </ShortsContext.Provider>
     </VidioContext.Provider>
   );
 }

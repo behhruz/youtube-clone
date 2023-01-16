@@ -1,5 +1,8 @@
 import Img from "../assets/image/1.png";
-let arr = [
+import Img1 from "../assets/image/2.png";
+import Img2 from "../assets/image/3.jpg";
+import Img3 from "../assets/image/4.png";
+let FirstMassiv = [
   {
     id: 1,
     vidio: (
@@ -37,7 +40,7 @@ let arr = [
     ),
     rol: "vidio",
     subscribed: true,
-    img: Img,
+    img: Img1,
     text: "Music by Benom",
     name: "Benom_offical",
     watch: "16m view",
@@ -59,7 +62,7 @@ let arr = [
     ),
     rol: "vidio",
     subscribed: true,
-    img: Img,
+    img: Img2,
     text: "Littel family interview",
     name: "Jahongir Latipov",
     watch: "7m view",
@@ -81,7 +84,7 @@ let arr = [
     ),
     rol: "vidio",
     subscribed: true,
-    img: Img,
+    img: Img3,
     text: "Ramazan Temirov vc Palonchi",
     name: "Bugun Sport",
     watch: "20m view",
@@ -89,3 +92,4 @@ let arr = [
     type: "sport",
   },
 ];
+export default FirstMassiv;
