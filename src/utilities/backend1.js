@@ -2,20 +2,21 @@ import Img from "../assets/image/1.png";
 import Img1 from "../assets/image/2.png";
 import Img2 from "../assets/image/3.jpg";
 import Img3 from "../assets/image/4.png";
+{
+  /* <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/PNOgR-Ab_8k"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>; */
+}
 let FirstMassiv = [
   {
     id: 1,
-    vidio: (
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/bMknfKXIFA8"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    ),
+    vidio: "https://www.youtube.com/embed/PNOgR-Ab_8k",
     rol: "vidio",
     subscribed: true,
     img: Img,
@@ -27,17 +28,7 @@ let FirstMassiv = [
   },
   {
     id: 2,
-    vidio: (
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/vGQZB_RiOIY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    ),
+    vidio: "https://www.youtube.com/embed/PNOgR-Ab_8k",
     rol: "vidio",
     subscribed: true,
     img: Img1,
@@ -49,17 +40,8 @@ let FirstMassiv = [
   },
   {
     id: 3,
-    vidio: (
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/fs4co7-8UEE"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    ),
+    vidio: "https://www.youtube.com/embed/fs4co7-8UEE",
+
     rol: "vidio",
     subscribed: true,
     img: Img2,
@@ -71,17 +53,7 @@ let FirstMassiv = [
   },
   {
     id: 4,
-    vidio: (
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/RI_oca0GFQc"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    ),
+    vidio: "https://www.youtube.com/embed/RI_oca0GFQc",
     rol: "vidio",
     subscribed: true,
     img: Img3,

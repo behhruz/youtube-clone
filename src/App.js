@@ -6,10 +6,10 @@ import Sidebar from "./components/sidebar";
 import { ShortsContext, VidioContext } from "./context";
 import FirstMassiv from "./utilities/backend1";
 function App() {
-  // const [Vidio, SetVidio] = useState(FirstMassiv);
+  const [Vidio, SetVidio] = useState(FirstMassiv);
   return (
-    <VidioContext.Provider value={FirstMassiv}>
-      <ShortsContext.Provider>
+    <VidioContext.Provider value={{Vidio,SetVidio}}>
+      <ShortsContext.Provider value={'a'}>
         <Navbar />
         <div style={{ display: "flex" }}>
           <Sidebar />

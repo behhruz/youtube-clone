@@ -10,8 +10,11 @@ import Img7 from "../../assets/icon/later.png";
 import Img8 from "../../assets/icon/liked.png";
 import Img9 from "../../assets/icon/show.png";
 import { VidioContext } from "../../context";
+import FirstMassiv from "../../utilities/backend1";
 const Sidebar = () => {
-  const [state, SetState] = useContext(VidioContext);
+  const { Vidio, SetVidio } = useContext(VidioContext);
+  const arr = FirstMassiv;
+  console.log(Vidio, "p");
   return (
     <>
       <Box>
@@ -59,13 +62,19 @@ const Sidebar = () => {
             <Latter>Show More</Latter>
           </Box2>
         </Lines>
-        {state.map((v) => {
-          return (
-            <>
-              <div>{v.name}</div>
-            </>
-          );
-        })}
+        {Vidio.map((v) => (
+          <>
+            <Latter>{v.name}</Latter>
+            <iframe
+              src={v.vidio}
+              frameborder="0"
+              width="560"
+              height="315"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </>
+        ))}
       </Box>
     </>
   );
