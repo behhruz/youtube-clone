@@ -64,15 +64,10 @@ const Sidebar = () => {
         </Lines>
         {Vidio.map((v) => (
           <>
-            <Latter>{v.name}</Latter>
-            <iframe
-              src={v.vidio}
-              frameborder="0"
-              width="560"
-              height="315"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            <Box2>
+              <Image radius src={v.img} />
+              <Latter>{v.name}</Latter>
+            </Box2>
           </>
         ))}
       </Box>

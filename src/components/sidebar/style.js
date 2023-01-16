@@ -4,7 +4,7 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #212121;
-  width: 240px;
+  width:20%;
 `;
 const Box2 = styled.div`
   display: flex;
@@ -17,13 +17,17 @@ const Box2 = styled.div`
 const Image = styled.img`
   width: 17px;
   height: 17px;
-  height: ${({vv})=> vv && '9px' };
+  height: ${({ vv }) => vv && "9px"};
+  width: ${({ radius }) => radius && "24px"};
+  height: ${({ radius }) => radius && "24px"};
+  border-radius: ${({ radius }) => radius && "50%"};
 `;
 
-
 const Lines = styled.div`
-border-bottom: 0.7px solid #303030;
-`
+  border-bottom: 0.7px solid #303030;
+  /* position: sticky;
+  top: 0; */
+`;
 const Latter = styled.p`
   font-family: "Roboto";
   font-style: normal;
@@ -33,4 +37,4 @@ const Latter = styled.p`
   color: white;
   margin: 0 20px;
 `;
-export { Box, Box2, Image, Latter,Lines };
+export { Box, Box2, Image, Latter, Lines };

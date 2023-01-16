@@ -7,6 +7,8 @@ const Box = styled.div`
   background-color: #212121;
   height: 56px;
   padding: 0 15px;
+  position: sticky;
+  top: 0;
 `;
 const Mini_box = styled.div`
   display: flex;

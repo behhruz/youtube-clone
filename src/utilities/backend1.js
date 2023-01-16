@@ -2,6 +2,8 @@ import Img from "../assets/image/1.png";
 import Img1 from "../assets/image/2.png";
 import Img2 from "../assets/image/3.jpg";
 import Img3 from "../assets/image/4.png";
+import Img4 from "../assets/image/Islam.jpg";
+import Img5 from "../assets/image/bmw.jpg";
 {
   /* <iframe
   width="560"
@@ -28,7 +30,7 @@ let FirstMassiv = [
   },
   {
     id: 2,
-    vidio: "https://www.youtube.com/embed/PNOgR-Ab_8k",
+    vidio: "https://www.youtube.com/embed/vGQZB_RiOIY",
     rol: "vidio",
     subscribed: true,
     img: Img1,
@@ -36,7 +38,7 @@ let FirstMassiv = [
     name: "Benom_offical",
     watch: "16m view",
     data: "3 years ago",
-    type: "Music",
+    type: "music",
   },
   {
     id: 3,
@@ -58,6 +60,55 @@ let FirstMassiv = [
     subscribed: true,
     img: Img3,
     text: "Ramazan Temirov vc Palonchi",
+    name: "Bugun Sport",
+    watch: "20m view",
+    data: "3 moths ago",
+    type: "sport",
+  },
+  {
+    id: 5,
+    vidio: "https://www.youtube.com/embed/qT_-ISKI8FM",
+    rol: "vidio",
+    subscribed: true,
+    img: Img4,
+    text: "Islam Itlyashev Rozi",
+    name: "Islam Itlyashev",
+    watch: "10m view",
+    data: "3 year ago",
+    type: "Music",
+  },
+
+  {
+    id: 6,
+    vidio: "https://www.youtube.com/embed/InI-4QFOA-M",
+    rol: "vidio",
+    subscribed: true,
+    img: Img5,
+    text: "Bmw test moment",
+    name: "Cars",
+    watch: "10m view",
+    data: "3 year ago",
+    type: "cars",
+  },
+  {
+    id: 7,
+    vidio: "https://www.youtube.com/embed/bkVc4GDpWK8",
+    rol: "vidio",
+    subscribed: true,
+    img: Img4,
+    text: "Islam Itlyashev Dikaya",
+    name: "Islam Itlyashev",
+    watch: "10m view",
+    data: "3 year ago",
+    type: "Music",
+  },
+  {
+    id: 8,
+    vidio: "https://www.youtube.com/embed/hDsQO_dvVso",
+    rol: "vidio",
+    subscribed: true,
+    img: Img3,
+    text: "Shoxasan  Mirzamatov vc Edil Esinqul",
     name: "Bugun Sport",
     watch: "20m view",
     data: "3 moths ago",
