@@ -11,7 +11,7 @@ function App() {
     <VidioContext.Provider value={{Vidio,SetVidio}}>
       <ShortsContext.Provider value={'a'}>
         <Navbar />
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex",background:'black' }}>
           <Sidebar />
           <Body />
         </div>

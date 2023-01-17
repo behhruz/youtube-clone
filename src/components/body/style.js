@@ -13,6 +13,7 @@ const Box = styled.div`
 const Container = styled.div`
   background-color: black;
   width: 80%;
+  height: 100vh;
 `;
 const Button = styled.button`
   background-color: #303030;
@@ -25,18 +26,39 @@ const Button = styled.button`
 `;
 const Box2 = styled.div`
   width: 240px;
+  margin: 20px 12px;
 `;
 const Img = styled.img`
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
 `;
-const Latters = styled.p``;
+const Latters = styled.p`
+  color: white;
+  margin: 0 10px;
+`;
+const Box4 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+`;
+const Box5 = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: -5px 38px;
+`;
+const Latter = styled.p`
+  color: #aaaaaa;
+  font-size: 13px;
+  margin: ${({vvv})=>vvv && '-10px 0'};
+`;
+
 const Box3 = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 20px;
+ 
 `;
-export { Box, Container, Button, Box2, Img, Latters, Box3 };
+export { Box, Container, Button, Box2, Img, Latters, Box3, Box4,Box5,Latter };

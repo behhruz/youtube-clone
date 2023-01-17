@@ -5,6 +5,7 @@ const Box = styled.div`
   flex-direction: column;
   background-color: #212121;
   width:20%;
+  height: 100wh;
 `;
 const Box2 = styled.div`
   display: flex;

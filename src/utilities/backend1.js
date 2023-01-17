@@ -27,6 +27,7 @@ let FirstMassiv = [
     watch: "15k view",
     data: "1 hours ago",
     type: "programming",
+    all: "all",
   },
   {
     id: 2,
@@ -39,6 +40,7 @@ let FirstMassiv = [
     watch: "16m view",
     data: "3 years ago",
     type: "music",
+    all: "all",
   },
   {
     id: 3,
@@ -52,6 +54,7 @@ let FirstMassiv = [
     watch: "7m view",
     data: "3 days ago",
     type: "interview",
+    all: "all",
   },
   {
     id: 4,
@@ -59,11 +62,12 @@ let FirstMassiv = [
     rol: "vidio",
     subscribed: true,
     img: Img3,
-    text: "Ramazan Temirov vc Palonchi",
+    text: "Ramazan Temirov",
     name: "Bugun Sport",
     watch: "20m view",
     data: "3 moths ago",
     type: "sport",
+    all: "all",
   },
   {
     id: 5,
@@ -76,6 +80,7 @@ let FirstMassiv = [
     watch: "10m view",
     data: "3 year ago",
     type: "Music",
+    all: "all",
   },
 
   {
@@ -89,6 +94,7 @@ let FirstMassiv = [
     watch: "10m view",
     data: "3 year ago",
     type: "cars",
+    all: "all",
   },
   {
     id: 7,
@@ -101,6 +107,7 @@ let FirstMassiv = [
     watch: "10m view",
     data: "3 year ago",
     type: "Music",
+    all: "all",
   },
   {
     id: 8,
@@ -108,11 +115,12 @@ let FirstMassiv = [
     rol: "vidio",
     subscribed: true,
     img: Img3,
-    text: "Shoxasan  Mirzamatov vc Edil Esinqul",
+    text: "Shoxasan  Mirzamatov ",
     name: "Bugun Sport",
     watch: "20m view",
     data: "3 moths ago",
     type: "sport",
+    all: "all",
   },
 ];
 export default FirstMassiv;
