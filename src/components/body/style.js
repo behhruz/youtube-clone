@@ -11,9 +11,13 @@ const Box = styled.div`
   justify-content: flex-start;
 `;
 const Container = styled.div`
-  background-color: black;
+  background-color: #303030;
   width: 80%;
   height: 100vh;
+`;
+const Vidio = styled.iframe`
+  width: 240px;
+  height: 135px;
 `;
 const Button = styled.button`
   background-color: #303030;
@@ -41,7 +45,6 @@ const Box4 = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
 `;
 const Box5 = styled.div`
   display: flex;
@@ -51,7 +54,7 @@ const Box5 = styled.div`
 const Latter = styled.p`
   color: #aaaaaa;
   font-size: 13px;
-  margin: ${({vvv})=>vvv && '-10px 0'};
+  margin: ${({ vvv }) => vvv && "-10px 0"};
 `;
 
 const Box3 = styled.div`
@@ -59,6 +62,5 @@ const Box3 = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
- 
 `;
-export { Box, Container, Button, Box2, Img, Latters, Box3, Box4,Box5,Latter };
+export { Box, Container, Button, Box2, Img, Latters, Box3, Box4, Box5, Latter,Vidio };

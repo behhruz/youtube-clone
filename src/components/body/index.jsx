@@ -16,10 +16,14 @@ const Body = () => {
   const { Vidio, SetVidio } = useContext(VidioContext);
   const [mas, SetMAs] = useState({});
   const ProgFilter = () => {
-    SetVidio(Vidio.filter((v) => (v.type == "programming")));
+    let res = Vidio.filter((v) => v.type == "programming");
+    SetVidio({ Vidio: res });
+    SetMAs({ mas: Vidio });
   };
   const allFilter = () => {
-    SetVidio(Vidio.filter((v) => (v.all == "all" )));
+    let res = Vidio.filter((v) => v.all == "all");
+    SetVidio({ Vidio: res });
+    SetMAs({ mas: Vidio });
   };
   return (
     <>
@@ -36,6 +40,7 @@ const Body = () => {
           {Vidio.map((v) => (
             <Box2 key={v.id}>
               <iframe
+                style={{ borderRadius: "10px" }}
                 src={v.vidio}
                 width="240"
                 height="135"
