@@ -23,7 +23,7 @@ const Navbar = () => {
             <Imge youtube src={Icon1} />
           </Mini_box>
           <Mini_box active>
-            {state == "light" ? "." : "."}
+            
             <Imge change src={Icon2} />
             <Imge change src={Icon3} />
           </Mini_box>
