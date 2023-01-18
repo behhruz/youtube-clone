@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Box, Div, Imge, Input, Mini_box } from "./style";
 import Icon from "../../assets/icon/youtube.png";
 import Icon1 from "../../assets/icon/Logo.png";
@@ -11,9 +11,15 @@ import Icon7 from "../../assets/icon/nine.png";
 import Icon8 from "../../assets/icon/Vector.png";
 import Icon9 from "../../assets/image/my.jpg";
 import { ThemeContext } from "../../App";
+import { AllContext, VidioContext } from "../../context";
 
 const Navbar = () => {
   let { state, SetState } = useContext(ThemeContext);
+  const { Vidio, SetVidio } = useContext(VidioContext);
+  const {value, SetValue} = useContext(AllContext);
+  const OnChange = ({ target: { value } }) => {
+    SetValue((value = value));
+  };
   return (
     <>
       <Box>
@@ -23,13 +29,12 @@ const Navbar = () => {
             <Imge youtube src={Icon1} />
           </Mini_box>
           <Mini_box active>
-            
             <Imge change src={Icon2} />
             <Imge change src={Icon3} />
           </Mini_box>
         </Mini_box>
         <Mini_box>
-          <Input placeholder="Searc"></Input>
+          <Input placeholder="Searc" onChange={OnChange}></Input>
           <Div act>
             <Imge src={Icon4} change />
           </Div>

@@ -1,15 +1,22 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import "./App.css";
 import Body from "./components/body";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
-import { ShortsContext, VidioContext } from "./context";
+import {
+  AllContext,
+  MassaContext,
+  ShortsContext,
+  VidioContext,
+} from "./context";
 import FirstMassiv from "./utilities/backend1";
 export const ThemeContext = createContext();
 function App() {
   const [Vidio, SetVidio] = useState(FirstMassiv);
+  const [mas, SetMas] = useState("all");
   const [state, SetState] = useState("light");
+  const [value,SetValue] = useState("");
   const Theme = {
     light: {
       bg: "white",
@@ -23,11 +30,21 @@ function App() {
         <ThemeProvider theme={Theme[state]}>
           <ThemeContext.Provider value={{ state, SetState }}>
             {" "}
-            <Navbar />
-            <div style={{ display: "flex", background: "black" }}>
-              <Sidebar />
-              <Body />
-            </div>
+            <MassaContext.Provider value={{ mas, SetMas }}>
+              <AllContext.Provider value={{value,SetValue}}>
+                <Navbar />
+                <div
+                  style={{
+                    display: "flex",
+                    background: "#212121",
+                    height: "100%",
+                  }}
+                >
+                  <Sidebar />
+                  <Body />
+                </div>
+              </AllContext.Provider>
+            </MassaContext.Provider>
           </ThemeContext.Provider>
         </ThemeProvider>
       </ShortsContext.Provider>

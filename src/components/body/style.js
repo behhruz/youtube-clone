@@ -11,13 +11,13 @@ const Box = styled.div`
   justify-content: flex-start;
 `;
 const Container = styled.div`
-  background-color: #303030;
   width: 80%;
-  height: 100vh;
+  height: 100%;
 `;
 const Vidio = styled.iframe`
   width: 240px;
   height: 135px;
+ 
 `;
 const Button = styled.button`
   background-color: #303030;
@@ -30,7 +30,12 @@ const Button = styled.button`
 `;
 const Box2 = styled.div`
   width: 240px;
-  margin: 20px 12px;
+  margin: 20px 13px;
+  transition: all 0.1s;
+  &:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
 `;
 const Img = styled.img`
   width: 28px;
@@ -63,4 +68,16 @@ const Box3 = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-export { Box, Container, Button, Box2, Img, Latters, Box3, Box4, Box5, Latter,Vidio };
+export {
+  Box,
+  Container,
+  Button,
+  Box2,
+  Img,
+  Latters,
+  Box3,
+  Box4,
+  Box5,
+  Latter,
+  Vidio,
+};

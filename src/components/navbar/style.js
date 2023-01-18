@@ -39,6 +39,7 @@ const Input = styled.input`
   border-radius: 2px 0px 0px 2px;
   width: 350px;
   height: 30px;
+  
 `;
 const Div = styled.div`
   background-color: #303030;

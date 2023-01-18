@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
-import { VidioContext } from "../../context";
+import { AllContext, MassaContext, VidioContext } from "../../context";
+import FirstMassiv from "../../utilities/backend1";
 import {
   Box,
   Box2,
@@ -14,51 +15,63 @@ import {
 } from "./style";
 const Body = () => {
   const { Vidio, SetVidio } = useContext(VidioContext);
-  const [mas, SetMAs] = useState({});
-  const ProgFilter = () => {
-    let res = Vidio.filter((v) => v.type == "programming");
-    SetVidio({ Vidio: res });
-    SetMAs({ mas: Vidio });
-  };
-  const allFilter = () => {
-    let res = Vidio.filter((v) => v.all == "all");
-    SetVidio({ Vidio: res });
-    SetMAs({ mas: Vidio });
+  const {mas, SetMas} = useContext(MassaContext);
+  const {value,SetValue} = useContext(AllContext);
+  // const msg = useContext(AllContext);
+  const allFilter = ({ target }) => {
+    SetMas(target.value);
+    SetVidio((Vidio = mas));
   };
   return (
     <>
       <Container>
         <Box>
-          <Button onClick={allFilter}>all</Button>
-          <Button onClick={ProgFilter}>programming</Button>
-          <Button>music</Button>
-          <Button>interview</Button>
-          <Button>sport</Button>
-          <Button>cars</Button>
+          <Button value={"all"} onClick={allFilter}>
+            all
+          </Button>
+          <Button value={"programming"} onClick={allFilter}>
+            programming
+          </Button>
+          <Button value={"music"} onClick={allFilter}>
+            music
+          </Button>
+          <Button value={"interview"} onClick={allFilter}>
+            interview
+          </Button>
+          <Button value={"sport"} onClick={allFilter}>
+            sport
+          </Button>
+          <Button value={"cars"} onClick={allFilter}>
+            cars
+          </Button>
         </Box>
         <Box3>
-          {Vidio.map((v) => (
-            <Box2 key={v.id}>
-              <iframe
-                style={{ borderRadius: "10px" }}
-                src={v.vidio}
-                width="240"
-                height="135"
-                frameborder="0"
-              ></iframe>
-              <Box4>
-                {" "}
-                <Img src={v.img} />
-                <Latters>{v.text}</Latters>
-              </Box4>
-              <Box5>
-                <Latter>{v.name}</Latter>
-                <Latter vvv>
-                  {v.watch}.{v.data}
-                </Latter>
-              </Box5>
-            </Box2>
-          ))}
+          {Vidio.filter((i) =>
+            i.text.toLowerCase().includes(value.toLowerCase())
+          )
+            .filter((i) => (mas == "all" ? true : i.type == mas))
+            .map((v) => (
+              <Box2 key={v.id}>
+                <iframe
+                  style={{ borderRadius: "10px" }}
+                  src={v.vidio}
+                  width="240"
+                  height="140"
+                  frameborder="0"
+                ></iframe>
+                <Box4>
+                  {" "}
+                  <Img src={v.img} />
+                  <Latters>{v.text}</Latters>
+                </Box4>
+                <Box5>
+                  <Latter>{v.name}</Latter>
+                  <Latter vvv>
+                    {v.watch}.{v.data}
+                  </Latter>
+                </Box5>
+              </Box2>
+            ))}
         </Box3>
       </Container>
     </>
