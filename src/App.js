@@ -11,9 +11,11 @@ import {
   VidioContext,
 } from "./context";
 import FirstMassiv from "./utilities/backend1";
+import SecondMassiv from "./utilities/backend2";
 export const ThemeContext = createContext();
 function App() {
   const [Vidio, SetVidio] = useState(FirstMassiv);
+  const [Short,SetShort] = useState(SecondMassiv)
   const [mas, SetMas] = useState("all");
   const [state, SetState] = useState("light");
   const [value,SetValue] = useState("");
@@ -26,7 +28,7 @@ function App() {
   };
   return (
     <VidioContext.Provider value={{ Vidio, SetVidio }}>
-      <ShortsContext.Provider value={"a"}>
+      <ShortsContext.Provider value={{Short,SetShort}}>
         <ThemeProvider theme={Theme[state]}>
           <ThemeContext.Provider value={{ state, SetState }}>
             {" "}

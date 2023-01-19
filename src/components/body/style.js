@@ -17,7 +17,6 @@ const Container = styled.div`
 const Vidio = styled.iframe`
   width: 240px;
   height: 135px;
- 
 `;
 const Button = styled.button`
   background-color: #303030;
@@ -32,7 +31,7 @@ const Box2 = styled.div`
   width: 240px;
   margin: 20px 13px;
   transition: all 0.1s;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
     transition: all 0.3s;
   }
@@ -45,6 +44,7 @@ const Img = styled.img`
 const Latters = styled.p`
   color: white;
   margin: 0 10px;
+  font-size: ${({dd})=>dd &&"14px"};
 `;
 const Box4 = styled.div`
   display: flex;
@@ -60,6 +60,9 @@ const Latter = styled.p`
   color: #aaaaaa;
   font-size: 13px;
   margin: ${({ vvv }) => vvv && "-10px 0"};
+  font-size: ${({short})=>short && "18px"};
+  color: ${({short})=>short && "#ffffff"};
+  margin: ${({rr})=>rr && "-3px 10px"};
 `;
 
 const Box3 = styled.div`
@@ -68,6 +71,18 @@ const Box3 = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+
+const Boxes = styled.div`
+display :flex;
+
+
+`;
+const Boxes1 = styled.div`
+margin: 5px 10px;
+width: 150px;
+`;
+const Boxes2 = styled.div``;
+
 export {
   Box,
   Container,
@@ -80,4 +95,7 @@ export {
   Box5,
   Latter,
   Vidio,
+  Boxes,
+  Boxes1,
+  Boxes2,
 };
