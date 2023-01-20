@@ -7,7 +7,7 @@ let SecondMassiv = [
     texts: "Konor McGregor",
     watchs: "157m view",
     type: "sport",
-    all: "all",
+    all: "alll",
   },
   {
     id: 10,
@@ -17,7 +17,7 @@ let SecondMassiv = [
     texts: "Bmw x5 G05",
     watchs: "3.200 view",
     type: "cars",
-    all: "all",
+    all: "alll",
   },
   {
     id: 11,
@@ -27,7 +27,7 @@ let SecondMassiv = [
     texts: "Sowt programing developer",
     watchs: "1.2m view",
     type: "programming",
-    all: "all",
+    all: "alll",
   },
   {
     id: 12,
@@ -37,7 +37,7 @@ let SecondMassiv = [
     texts: "Lubov i son ya naydu",
     watchs: "1.9m view",
     type: "music",
-    all: "all",
+    all: "alll",
   },
   {
     id: 13,
@@ -47,7 +47,7 @@ let SecondMassiv = [
     texts: "Shaxriyor vc Timati",
     watchs: "1.1m view",
     type: "interview",
-    all: "all",
+    all: "alll",
   },
   {
     id: 14,
@@ -57,7 +57,7 @@ let SecondMassiv = [
     texts: "Islam Itlyashev na svadbe",
     watchs: "1m view",
     type: "Music",
-    all: "all",
+    all: "alll",
   },
 ];
 export default SecondMassiv;

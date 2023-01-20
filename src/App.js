@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
 import {
   AllContext,
+  HomeContext,
   MassaContext,
   ShortsContext,
   VidioContext,
@@ -15,10 +16,11 @@ import SecondMassiv from "./utilities/backend2";
 export const ThemeContext = createContext();
 function App() {
   const [Vidio, SetVidio] = useState(FirstMassiv);
-  const [Short,SetShort] = useState(SecondMassiv)
+  const [Short, SetShort] = useState(SecondMassiv);
   const [mas, SetMas] = useState("all");
   const [state, SetState] = useState("light");
-  const [value,SetValue] = useState("");
+  const [value, SetValue] = useState("");
+  const [home, SetHome] = useState("alll");
   const Theme = {
     light: {
       bg: "white",
@@ -28,23 +30,26 @@ function App() {
   };
   return (
     <VidioContext.Provider value={{ Vidio, SetVidio }}>
-      <ShortsContext.Provider value={{Short,SetShort}}>
+      <ShortsContext.Provider value={{ Short, SetShort }}>
         <ThemeProvider theme={Theme[state]}>
           <ThemeContext.Provider value={{ state, SetState }}>
             {" "}
             <MassaContext.Provider value={{ mas, SetMas }}>
-              <AllContext.Provider value={{value,SetValue}}>
-                <Navbar />
-                <div
-                  style={{
-                    display: "flex",
-                    background: "#212121",
-                    height: "100%",
-                  }}
-                >
-                  <Sidebar />
-                  <Body />
-                </div>
+              <AllContext.Provider value={{ value, SetValue }}>
+                <HomeContext.Provider value={{ home, SetHome }}>
+                  {" "}
+                  <Navbar />
+                  <div
+                    style={{
+                      display: "flex",
+                      background: "#212121",
+                      height: "100%",
+                    }}
+                  >
+                    <Sidebar />
+                    <Body />
+                  </div>
+                </HomeContext.Provider>
               </AllContext.Provider>
             </MassaContext.Provider>
           </ThemeContext.Provider>

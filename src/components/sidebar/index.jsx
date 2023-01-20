@@ -9,18 +9,26 @@ import Img6 from "../../assets/icon/your.png";
 import Img7 from "../../assets/icon/later.png";
 import Img8 from "../../assets/icon/liked.png";
 import Img9 from "../../assets/icon/show.png";
-import { VidioContext } from "../../context";
+import {
+  HomeContext,
+  MassaContext,
+  ShortsContext,
+  VidioContext,
+} from "../../context";
 import FirstMassiv from "../../utilities/backend1";
 const Sidebar = () => {
   const { Vidio, SetVidio } = useContext(VidioContext);
+  const { Short, SetShort } = useContext(ShortsContext);
+  const { home, SetHome } = useContext(HomeContext);
   const arr = FirstMassiv;
   console.log(Vidio, "p");
+
   return (
     <>
       <Box>
         <Lines>
           {" "}
-          <Box2>
+          <Box2 value={"alll"}>
             {" "}
             <Image src={Img1} />
             <Latter>Home</Latter>
@@ -62,14 +70,48 @@ const Sidebar = () => {
             <Latter>Show More</Latter>
           </Box2>
         </Lines>
-        {Vidio.map((v) => (
-          <>
-            <Box2>
-              <Image radius src={v.img} />
-              <Latter>{v.name}</Latter>
-            </Box2>
-          </>
-        ))}
+        <Lines>
+          {Vidio.map((v) => (
+            <>
+              <Box2>
+                <Image radius src={v.img} />
+                <Latter>{v.name}</Latter>
+              </Box2>
+            </>
+          ))}{" "}
+          <Box2>
+            <Image vv src={Img9} />
+            <Latter>Show More 13</Latter>
+          </Box2>
+        </Lines>
+        <Lines>
+          {" "}
+          <Box2>
+            {" "}
+            <Image src={Img1} />
+            <Latter>YouTUbe</Latter>
+          </Box2>
+          <Box2>
+            <Image src={Img2} />
+            <Latter>All</Latter>
+          </Box2>
+          <Box2>
+            <Image src={Img3} />
+            <Latter>Subscriptions</Latter>
+          </Box2>
+          <Box2>
+            <Image src={Img6} />
+            <Latter>Your Videos</Latter>
+          </Box2>
+          <Box2>
+            <Image src={Img7} />
+            <Latter>Watch Later</Latter>
+          </Box2>
+          <Box2>
+            <Image src={Img8} />
+            <Latter>Liked Videos</Latter>
+          </Box2>
+        </Lines>
       </Box>
     </>
   );

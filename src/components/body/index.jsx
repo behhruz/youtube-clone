@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import {
   AllContext,
+  HomeContext,
   MassaContext,
   ShortsContext,
   VidioContext,
@@ -56,9 +57,9 @@ const Body = () => {
           </Button>
         </Box>
         <Box3>
-          {Vidio.filter((i) =>
-            i.text.toLowerCase().includes(value.toLowerCase())
-          )
+          {Vidio
+            // .filter((i)=> )
+            .filter((i) => i.text.toLowerCase().includes(value.toLowerCase()))
             .filter((i) => (mas == "all" ? true : i.type == mas))
             .map((v) => (
               <div key={v.id}>

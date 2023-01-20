@@ -26,7 +26,7 @@ const Image = styled.img`
 `;
 
 const Lines = styled.div`
-  border-bottom: 0.7px solid #303030;
+  border-bottom: 0.6px solid #303030;
   /* position: sticky;
   top: 0; */
 `;

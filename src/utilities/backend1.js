@@ -27,20 +27,20 @@ let FirstMassiv = [
     watch: "15k view",
     data: "1 hours ago",
     type: "programming",
-    all: "all",
+    all: "alll",
   },
   {
     id: 2,
     vidio: "https://www.youtube.com/embed/vGQZB_RiOIY",
     rol: "vidio",
-    subscribed: true,
+    subscribed: false,
     img: Img1,
     text: "Music by Benom",
     name: "Benom_offical",
     watch: "16m view",
     data: "3 years ago",
     type: "music",
-    all: "all",
+    all: "alll",
   },
   {
     id: 3,
@@ -54,20 +54,20 @@ let FirstMassiv = [
     watch: "7m view",
     data: "3 days ago",
     type: "interview",
-    all: "all",
+    all: "alll",
   },
   {
     id: 4,
     vidio: "https://www.youtube.com/embed/RI_oca0GFQc",
     rol: "vidio",
-    subscribed: true,
+    subscribed: false,
     img: Img3,
     text: "Ramazan Temirov",
     name: "Bugun Sport",
     watch: "20m view",
     data: "3 moths ago",
     type: "sport",
-    all: "all",
+    all: "alll",
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ let FirstMassiv = [
     watch: "10m view",
     data: "3 year ago",
     type: "Music",
-    all: "all",
+    all: "alll",
   },
 
   {
@@ -94,7 +94,7 @@ let FirstMassiv = [
     watch: "10m view",
     data: "3 year ago",
     type: "cars",
-    all: "all",
+    all: "alll",
   },
   {
     id: 7,
@@ -107,7 +107,7 @@ let FirstMassiv = [
     watch: "10m view",
     data: "3 year ago",
     type: "Music",
-    all: "all",
+    all: "alll",
   },
   {
     id: 8,
@@ -120,7 +120,7 @@ let FirstMassiv = [
     watch: "20m view",
     data: "3 moths ago",
     type: "sport",
-    all: "all",
+    all: "alll",
   },
 ];
 export default FirstMassiv;
