@@ -113,7 +113,7 @@ let FirstMassiv = [
     id: 8,
     vidio: "https://www.youtube.com/embed/hDsQO_dvVso",
     rol: "vidio",
-    subscribed: true,
+    subscribed: false,
     img: Img3,
     text: "Shoxasan  Mirzamatov ",
     name: "Bugun Sport",

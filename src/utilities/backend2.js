@@ -43,7 +43,7 @@ let SecondMassiv = [
     id: 13,
     vidios: "https://www.youtube.com/embed/dAgOgzEL8V4",
     rol: "shorts",
-    subscribed: true,
+    subscribed: false,
     texts: "Shaxriyor vc Timati",
     watchs: "1.1m view",
     type: "interview",

@@ -9,6 +9,7 @@ import Img6 from "../../assets/icon/your.png";
 import Img7 from "../../assets/icon/later.png";
 import Img8 from "../../assets/icon/liked.png";
 import Img9 from "../../assets/icon/show.png";
+import { NavLink } from "react-router-dom";
 import {
   HomeContext,
   MassaContext,
@@ -28,19 +29,25 @@ const Sidebar = () => {
       <Box>
         <Lines>
           {" "}
-          <Box2 value={"alll"}>
-            {" "}
-            <Image src={Img1} />
-            <Latter>Home</Latter>
-          </Box2>
-          <Box2>
-            <Image src={Img2} />
-            <Latter>Shorts</Latter>
-          </Box2>
-          <Box2>
-            <Image src={Img3} />
-            <Latter>Subscriptions</Latter>
-          </Box2>
+          <NavLink to={"home"}>
+            <Box2 value={"alll"}>
+              {" "}
+              <Image src={Img1} />
+              <Latter>Home</Latter>
+            </Box2>
+          </NavLink>
+          <NavLink to={"shorts"}>
+            <Box2>
+              <Image src={Img2} />
+              <Latter>Shorts</Latter>
+            </Box2>
+          </NavLink>
+          <NavLink to={"subscribed"}>
+            <Box2>
+              <Image src={Img3} />
+              <Latter>Subscriptions</Latter>
+            </Box2>
+          </NavLink>
         </Lines>
         <Lines>
           {" "}

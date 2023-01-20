@@ -4,6 +4,7 @@ import "./App.css";
 import Body from "./components/body";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
+import { Routes, Route } from "react-router-dom";
 import {
   AllContext,
   HomeContext,
@@ -13,6 +14,8 @@ import {
 } from "./context";
 import FirstMassiv from "./utilities/backend1";
 import SecondMassiv from "./utilities/backend2";
+import Subscribed from "./components/Contexts/Subscribed";
+import Shorts from "./components/Contexts/Short";
 export const ThemeContext = createContext();
 function App() {
   const [Vidio, SetVidio] = useState(FirstMassiv);
@@ -46,8 +49,14 @@ function App() {
                       height: "100%",
                     }}
                   >
-                    <Sidebar />
-                    <Body />
+                    {" "}
+                    <Sidebar />{" "}
+                    <Routes>
+                      <Route path="/" element={<Body />} />
+                      <Route path="home" element={<Body />} />
+                      <Route path="subscribed" element={<Subscribed />} />
+                      <Route path="shorts" element={<Shorts/>} />
+                    </Routes>
                   </div>
                 </HomeContext.Provider>
               </AllContext.Provider>
