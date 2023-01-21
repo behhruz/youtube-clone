@@ -62,7 +62,7 @@ const Latter = styled.p`
   margin: ${({ vvv }) => vvv && "-10px 0"};
   font-size: ${({short})=>short && "18px"};
   color: ${({short})=>short && "#ffffff"};
-  margin: ${({rr})=>rr && "-3px 10px"};
+  margin: ${({rr})=>rr && "-3px 11px"};
 `;
 
 const Box3 = styled.div`
