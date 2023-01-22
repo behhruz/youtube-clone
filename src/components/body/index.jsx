@@ -6,8 +6,6 @@ import {
   ShortsContext,
   VidioContext,
 } from "../../context";
-import FirstMassiv from "../../utilities/backend1";
-import SecondMassiv from "../../utilities/backend2";
 import {
   Box,
   Box2,
