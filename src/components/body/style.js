@@ -79,7 +79,7 @@ display :flex;
 `;
 const Boxes1 = styled.div`
 margin: 5px 10px;
-width: 149px;
+width: 148px;
 `;
 const Boxes2 = styled.div``;
 
