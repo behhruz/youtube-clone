@@ -50,7 +50,7 @@ function App() {
                     }}
                   >
                     {" "}
-                    <Sidebar />{" "}
+                    <Sidebar />{" "} 
                     <Routes>
                       <Route path="/" element={<Body />} />
                       <Route path="home" element={<Body />} />

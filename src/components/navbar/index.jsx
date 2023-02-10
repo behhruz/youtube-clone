@@ -16,7 +16,7 @@ import { AllContext, VidioContext } from "../../context";
 const Navbar = () => {
   let { state, SetState } = useContext(ThemeContext);
   const { Vidio, SetVidio } = useContext(VidioContext);
-  const {value, SetValue} = useContext(AllContext);
+  const { value, SetValue } = useContext(AllContext);
   const OnChange = ({ target: { value } }) => {
     SetValue((value = value));
   };
@@ -27,10 +27,6 @@ const Navbar = () => {
           <Mini_box>
             <Imge src={Icon} />
             <Imge youtube src={Icon1} />
-          </Mini_box>
-          <Mini_box active>
-            <Imge change src={Icon2} />
-            <Imge change src={Icon3} />
           </Mini_box>
         </Mini_box>
         <Mini_box>

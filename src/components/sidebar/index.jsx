@@ -29,20 +29,20 @@ const Sidebar = () => {
       <Box>
         <Lines>
           {" "}
-          <NavLink to={"home"}>
+          <NavLink style={{ textDecoration: "none" }} to={"home"}>
             <Box2 value={"alll"}>
               {" "}
               <Image src={Img1} />
               <Latter>Home</Latter>
             </Box2>
           </NavLink>
-          <NavLink to={"shorts"}>
+          <NavLink style={{ textDecoration: "none" }} to={"home"} to={"shorts"}>
             <Box2>
               <Image src={Img2} />
               <Latter>Shorts</Latter>
             </Box2>
           </NavLink>
-          <NavLink to={"subscribed"}>
+          <NavLink style={{ textDecoration: "none" }} to={"subscribed"}>
             <Box2>
               <Image src={Img3} />
               <Latter>Subscriptions</Latter>

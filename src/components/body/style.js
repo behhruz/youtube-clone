@@ -34,6 +34,7 @@ const Box2 = styled.div`
   &:hover {
     transform: scale(1.1);
     transition: all 0.3s;
+    z-index: 0;
   }
 `;
 const Img = styled.img`

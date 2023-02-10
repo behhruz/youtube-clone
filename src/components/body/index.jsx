@@ -25,12 +25,32 @@ const Body = () => {
   const { Short, SetShort } = useContext(ShortsContext);
   const { mas, SetMas } = useContext(MassaContext);
   const { value, SetValue } = useContext(AllContext);
+  const [active, setActive] = useState(0);
   // const msg = useContext(AllContext);
   const allFilter = ({ target }) => {
     SetMas(target.value);
     SetVidio((Vidio = mas));
     SetShort((Short = mas));
   };
+  // active buttons
+
+  const findIndex = (item) => {
+    setActive(item);
+  };
+
+  const api = [
+    { id: 1, name: "all", value: "all", onClick: { allFilter } },
+    {
+      id: 2,
+      name: "programming",
+      value: "programming",
+      onClick: { allFilter },
+    },
+    { id: 3, name: "music", value: "music", onClick: { allFilter } },
+    { id: 4, name: "interview", value: "interview", onClick: { allFilter } },
+    { id: 5, name: "sport", value: "sport", onClick: { allFilter } },
+    { id: 6, name: "cars", value: "cars", onClick: { allFilter } },
+  ];
   return (
     <>
       <Container>
@@ -55,9 +75,9 @@ const Body = () => {
           </Button>
         </Box>
         <Box3>
-          {Vidio
-            // .filter((i)=> )
-            .filter((i) => i.text.toLowerCase().includes(value.toLowerCase()))
+          {Vidio.filter((i) =>
+            i.text.toLowerCase().includes(value.toLowerCase())
+          )
             .filter((i) => (mas == "all" ? true : i.type == mas))
             .map((v) => (
               <div key={v.id}>
