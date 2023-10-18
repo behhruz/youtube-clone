@@ -8,4 +8,4 @@ export const HomeContext = createContext([])
 const HooksContext = () => {
   return {};
 };
-export default HooksContext;
+export default HooksContext; 
